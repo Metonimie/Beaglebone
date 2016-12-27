@@ -77,5 +77,5 @@ class Server(http.server.BaseHTTPRequestHandler):
 if __name__ == "__main__":
     server_address = ('', PORT)
     httpd = http.server.HTTPServer(server_address, Server)
-    print('Starting httpd...')
+    print('Starting server')
     httpd.serve_forever()
