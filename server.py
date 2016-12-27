@@ -14,7 +14,6 @@ Usage:
 
 import http.server
 import urllib
-import cgi
 
 PORT = 6410
 gpio_path = "/sys/class/gpio/"
@@ -80,4 +79,3 @@ if __name__ == "__main__":
     httpd = http.server.HTTPServer(server_address, Server)
     print('Starting httpd...')
     httpd.serve_forever()
-
