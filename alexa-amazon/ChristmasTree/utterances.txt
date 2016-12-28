@@ -1,0 +1,4 @@
+ChristmasTreeOnIntent to turn on
+ChristmasTreeOnIntent turn on
+ChristmasTreeOnOffIntent turn off
+ChristmasTreeOnOffIntent to turn off

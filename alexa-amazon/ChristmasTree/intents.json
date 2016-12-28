@@ -1,0 +1,13 @@
+{
+  "intents": [
+    {
+      "intent": "ChristmasTreeOnIntent"
+    },
+    {
+      "intent": "ChristmasTreeOnOffIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    }
+  ]
+}
