@@ -48,8 +48,8 @@ HelloWorld.prototype.eventHandlers.onSessionStarted = function (sessionStartedRe
 
 HelloWorld.prototype.eventHandlers.onLaunch = function (launchRequest, session, response) {
     console.log("HelloWorld onLaunch requestId: " + launchRequest.requestId + ", sessionId: " + session.sessionId);
-    var speechOutput = "Welcome to the Alexa Skills Kit.";
-    var repromptText = "You can say turn on the christmas tree";
+    var speechOutput = "Turn your Christmas Tree on or off using Alexa.";
+    var repromptText = "You can say tell christmas tree to turn on";
     response.ask(speechOutput, repromptText);
 };
 
@@ -81,7 +81,7 @@ HelloWorld.prototype.intentHandlers = {
             console.log("MQTT Error" + data);
           }
           else {
-            speechOutput = "Turning pump on now.";
+            speechOutput = "Turning on the christmas tree. Merry Christmas!";
             console.log(data);
             response.tell(speechOutput);
           }    
@@ -106,7 +106,7 @@ HelloWorld.prototype.intentHandlers = {
                 console.log("MQTT Error" + data);
             }
             else {
-                speechOutput = "Turning pump off now.";
+                speechOutput = "Turning off the christmas tree.";
                 console.log(data);
                 response.tell(speechOutput);
           }    
